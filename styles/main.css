@@ -12,7 +12,7 @@
 
 @font-face {
     font-weight: 400;
-    font-family: "Neucha", sans-serif;
+    font-family: "Neucha";
     src: url(assets/fonts/Neucha-Regular.ttf);
 }
 
@@ -33,12 +33,22 @@ body {
     flex-direction: column;
     align-items: center;
 
+    margin: 0;
+    padding: 0;
+
+    font-family: "Open Sans", sans-serif;
     font-size: 16px;
     line-height: 1.6em;
     color: var(--grey-d);
+
+    background: #e5e5e5;
 }
 
 .header {
+    margin-top: 0;
+
+    font-weight: 400;
+    font-family: "Neucha";
     line-height: 1.2em;
 }
 
@@ -66,4 +76,103 @@ body {
     width: 1110px;
 
     padding: 100px 0;
+}
+
+.text-yellow {
+    color: var(--orange);
+}
+
+.background-wrapper::before {
+    position: absolute;
+    left: 0;
+    z-index: -200;
+
+    display: block;
+    
+    width: 100%;
+    height: 115%;
+    background-image: url(assets/images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    opacity: 0.1;
+
+    content: "";
+}
+
+.header-section {
+    position: relative;
+}
+
+.header-img {
+    position: absolute;
+    top: 55px;
+    right: -270px;
+    z-index: -100;
+
+    height: 525px;
+}
+
+.header-header {
+    margin-bottom: 185px;
+}
+
+.paragraph-container {
+    column-count: 2;
+    column-gap: 30px;
+}
+
+.paragraph-container p {
+    break-inside: avoid;
+    margin: 0 0 40px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.header-link {
+    padding: 12px 24px;
+
+    font-weight: 700;
+    color: var(--white);
+
+    background: var(--orange);
+}
+
+.background-white::before {
+    position: absolute;
+    left: 0;
+    z-index: -200;
+
+    display: block;
+    
+    width: 100%;
+    height: 814px;
+    background: var(--white);
+
+    content: "";
+}
+
+.explain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-bottom: 0;
+}
+
+.explain-header {
+    margin-bottom: 30px;
+
+    text-align: center;
+}
+
+.explain-author {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.video {
+    filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
