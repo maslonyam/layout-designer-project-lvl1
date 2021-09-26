@@ -74,6 +74,7 @@ body {
 
 .section {
     width: 1110px;
+    height: 714px;
 
     padding: 100px 0;
 }
@@ -82,7 +83,15 @@ body {
     color: var(--orange);
 }
 
-.background-wrapper::before {
+.text-white {
+    color: var(--white);
+}
+
+li {
+    list-style: none;
+}
+
+.background::before {
     position: absolute;
     left: 0;
     z-index: -200;
@@ -91,13 +100,35 @@ body {
     
     width: 100%;
     height: 115%;
+
+    content: "";
+}
+
+.background-wrapper::before {
     background-image: url(assets/images/background.png);
     background-repeat: no-repeat;
     background-size: cover;
 
     opacity: 0.1;
+}
 
-    content: "";
+.background-white::before {
+    background: var(--white);
+}
+
+.background-grey::before {
+    background: var(--grey);
+    height: 1014px;
+}
+
+.paragraph-container {
+    column-count: 2;
+    column-gap: 30px;
+}
+
+.paragraph-container p {
+    break-inside: avoid;
+    margin: 0 0 40px;
 }
 
 .header-section {
@@ -117,16 +148,6 @@ body {
     margin-bottom: 185px;
 }
 
-.paragraph-container {
-    column-count: 2;
-    column-gap: 30px;
-}
-
-.paragraph-container p {
-    break-inside: avoid;
-    margin: 0 0 40px;
-}
-
 .link {
     text-decoration: none;
 }
@@ -140,21 +161,8 @@ body {
     background: var(--orange);
 }
 
-.background-white::before {
-    position: absolute;
-    left: 0;
-    z-index: -200;
-
-    display: block;
-    
-    width: 100%;
-    height: 814px;
-    background: var(--white);
-
-    content: "";
-}
-
 .explain {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -174,5 +182,67 @@ body {
 }
 
 .video {
+    position: absolute;
+    bottom: -100px;
     filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.biases {
+    display: flex;
+    padding-top: 200px;
+}
+
+.biases-header {
+    font-size: 52px;
+}
+
+.biases-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    height: 720px;
+    margin: 0;
+    padding: 0;
+}
+
+.biases-item {
+    display: flex;
+    flex-direction: column;
+
+    width: 300px;
+    height: 300px;
+
+    padding: 24px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+
+    background: var(--white);
+}
+
+.biases-item:first-child {
+    background: none;
+}
+
+.biases-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.biases-item .header {
+    order: 2;
+    margin-bottom: 16px;
+}
+
+.biases-paragraph {
+    order: 3;
+    margin: 0;
+}
+
+.biases-number {
+    order: 1;
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-family: "Neucha";
+    font-size: 64px;
+    line-height: 1;
 }
