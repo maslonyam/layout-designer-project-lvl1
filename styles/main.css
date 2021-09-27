@@ -44,6 +44,10 @@ body {
     background: #e5e5e5;
 }
 
+main {
+    width: 100%;
+}
+
 .header {
     margin-top: 0;
 
@@ -67,7 +71,7 @@ body {
 .header-fo {
     padding: 5px 10px;
     margin-top: 100px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-weight: 700;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
@@ -84,9 +88,9 @@ body {
 
 .section {    
     width: 1110px;
-    height: 714px;
 
     padding: 100px 0;
+    margin: 0 auto;
 }
 
 .biases-detail {
@@ -107,6 +111,10 @@ body {
     float: right;
 }
 
+.img-right {
+    float: right;
+}
+
 .detail-chapter,
 .detail-prologue {
     font-family: "Neucha";
@@ -114,6 +122,7 @@ body {
 
 .detail-chapter {
     order: 1;
+    margin-top: 0;
     margin-bottom: 0;
 }
 
@@ -128,12 +137,15 @@ body {
 }
 
 .biases-img {
-    width: 578px;
     filter: drop-shadow(0px 16px 32px rgba(0, 0, 0, 0.15));
 }
 
 .back-beige {
     background: var(--beige-d);
+}
+
+.back-white {
+    background: var(--white);
 }
 
 .text-yellow {
@@ -152,42 +164,60 @@ body {
     color: var(--white-tr);
 }
 
+.text-beige {
+    color: var(--beige-d);
+}
+
 li {
     list-style: none;
 }
 
-.background::before {
-    position: absolute;
+.background {
+    position: relative;
     left: 0;
-    z-index: -200;
+
 
     display: block;
-    
+
     width: 100%;
-    height: 115%;
+    min-height: 115%;
+    height: auto;
 
     content: "";
 }
 
-.background-wrapper::before {
+.background-wrapper:before {
+    position: absolute;
+    z-index: -100;
     background-image: url(assets/images/background.png);
     background-repeat: no-repeat;
     background-size: cover;
 
     opacity: 0.1;
+
+    display: block;
+
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+
+    content: "";
 }
 
-.background-white::before {
+.background-white {
     background: var(--white);
+    width: 100%;
 }
 
-.background-grey::before {
+.background-grey {
     background: var(--grey);
     height: 1014px;
 }
 
-.background-beige::before {
+.background-beige {
+    width: 100%;
     background: var(--beige-d);
+    z-index: -300;
 }
 
 .paragraph-container {
@@ -232,9 +262,13 @@ li {
 
 .explain {
     position: relative;
+    z-index: 100;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    height: 714px;
+
 
     padding-bottom: 0;
 }
@@ -252,6 +286,7 @@ li {
 
 .video {
     position: absolute;
+    z-index: 300;
     bottom: -100px;
     filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
