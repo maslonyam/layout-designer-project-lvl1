@@ -405,6 +405,7 @@ h4 {
 .paragraph-container p {
     break-inside: avoid;
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 form {
