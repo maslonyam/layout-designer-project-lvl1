@@ -26,6 +26,7 @@
     --grey-l: #e3e3e3;
     --grey-l-2: #f5f4f0;
     --grey-d: #2a2626;
+    --grey-d-2: #42413c;
     --grey-tr: #908d8b;
     --blue: #1085c5;
 }
@@ -299,7 +300,7 @@ br {
 
     color: inherit;
 
-    background: var(--white);
+    background: var(--grey-l-2);
     
     text-decoration: none;
 }
@@ -439,7 +440,7 @@ form {
     align-items: center;
     padding: 50px;
 
-    background: var(--grey-d);
+    background: var(--grey-d-2);
 }
 
 .form-header {
