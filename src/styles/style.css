@@ -137,7 +137,7 @@ h4 {
 }
 
 br {
-    line-height: 1.2;
+    line-height: 1;
 }
 
 .link {
@@ -158,6 +158,13 @@ br {
 
 .paragraph-18 {
     font-size: 18px;
+}
+
+.paragraph-24 {
+    font-size: 24px;
+}
+
+.paragraph-34 {
     font-size: 34px;
     line-height: 1.2;
 }
@@ -289,6 +296,7 @@ br {
     margin-right: 30px;
     margin-bottom: 20px;
     padding: 24px;
+    padding-left: 26px;
 
     color: inherit;
 
