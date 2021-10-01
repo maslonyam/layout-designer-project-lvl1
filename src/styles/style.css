@@ -361,7 +361,6 @@ br {
 }
 
 .biases-wrapper {
-    margin-top: 3px;
     column-count: 2;
     column-gap: 30px;
 }
@@ -378,7 +377,7 @@ br {
 }
 
 .description-right {
-    float: right;
+    padding-left: 40px;
 }
 
 .img-right {
