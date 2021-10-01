@@ -127,7 +127,7 @@ h3 {
 }
 
 h4 {
-    margin-top: 40px;
+    margin-top: 35px;
     margin-bottom: 20px;
     padding-left: 10px;
 
@@ -158,13 +158,6 @@ br {
 
 .paragraph-18 {
     font-size: 18px;
-}
-
-.paragraph-24 {
-    font-size: 24px;
-}
-
-.paragraph-34 {
     font-size: 34px;
     line-height: 1.2;
 }
@@ -259,7 +252,7 @@ br {
 .video {
     position: absolute;
     z-index: 300;
-    bottom: -95px;
+    bottom: -92px;
 
     filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
@@ -437,7 +430,7 @@ br {
 form {
     display: flex;
     align-items: center;
-    padding: 55px;
+    padding: 50px;
 
     background: var(--grey-d);
 }
