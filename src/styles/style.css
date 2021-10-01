@@ -19,12 +19,12 @@
 :root {
     --white: #fff;
     --white-tr: #d7ccc0;
-    --beige-l: #f5f4f0;
     --beige-d: #b09a81;
     --orange: #fe8a02;
     --orange-d: #ea7600;
     --grey: #42413c;
     --grey-l: #e3e3e3;
+    --grey-l-2: #f5f4f0;
     --grey-d: #2a2626;
     --grey-tr: #908d8b;
     --blue: #1085c5;
@@ -84,7 +84,7 @@ div {
 }
 
 .background-grey::before {
-    height: 1020px;
+    height: 991px;
 
     background: var(--grey);
 }
@@ -100,7 +100,7 @@ div {
     position: relative;
     z-index: -300;
 
-    background: var(--grey-l);
+    background: var(--grey-l-2);
 }
 
 h1, 
@@ -137,7 +137,7 @@ h4 {
 }
 
 br {
-    line-height: 1;
+    line-height: 0.8;
 }
 
 .link {
@@ -296,7 +296,6 @@ br {
     margin-right: 30px;
     margin-bottom: 20px;
     padding: 24px;
-    padding-left: 26px;
 
     color: inherit;
 
@@ -310,7 +309,7 @@ br {
 }
 
 .nav-item:first-child {
-    width: 348px;
+    width: 350px;
     background: none;
     padding: 0;
 }
